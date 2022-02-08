@@ -1,0 +1,77 @@
+CSCI 39538: Homework 1: Pokemon Spec        Due: 3/01/22
+
+For this classwork, you will experiment with Python classes and functions to create a Pokemon clone.
+
+The rules of the game are simple, you start off with a starter Pokemon you can choose from a list of Pokemon, and then move through a "map" (more like a grid) in order to collect other Pokemon. The game ends when you either lose a battle or collect 4 different Pokemon (different here means different Pokemon species).
+
+You can collect Pokemon in several ways, by defeating trainers, picking up a Pokeball you find on the ground or defeating a wild Pokemon (for the sake of this project, defeating is equivalent to capturing).
+
+Defeating means that you fight the Pokemon in a battle and win the battle.
+
+Minimum criteria for this assignment:
+
+You need classes for players, CPU-trainers, Pokemon and grid squares (it might be a good idea to create a grid class as well)
+
+For the player:
+    You need attributes for the Pokemon the player owns, the amount of money in the player's possession, the player's bag, the player's name, gender and nature (kind, mean, funny etc)
+
+For the Pokemon:
+    You need attributes for the name, health points, gender, nature and moves the Pokemon can use. Please note that moves might be better made as a class than a dict of move: attack power.
+
+For the CPU-trainers:
+    You need attributes for their name, Pokemon they own, the amount of money they award the player upon losing, the Pokemon they gift to the player if any, and a fun fact about them ("Jessica the rich girl fantasizes about ruling her town with an iron fist" for example [I wouldn't want to live in her town lol!])
+
+For the grid tiles:
+    The grid tile you land on should have attributes like the terrain you're on and whatever is on the terrain (if there is something on it, like a CPU-trainer or Pokemon or Pokeball).
+
+For the battle sequence:
+    The battle starts, both Pokemon are called out and you are presented with a list of options:
+        Run: leave the battle (the trainer/Pokemon you want to face is still available at that square in the grid)
+        Fight: Get presented with attack options your Pokemon can do
+        Use bag: Open your bag and use items from it (like a potion to heal, or something similar)
+        Change Pokemon: Get options for a Pokemon you can switch to, assuming that Pokemon has more than zero health.
+
+        In the fight sequence, you are presented with attacks you can use and the damage they cause.
+
+        Choose an attack by player input
+
+        Attack the other Pokemon and reduce that Pokemon's health
+
+        The other Pokemon attacks you with moves that are available to it (random move selection is fine here)
+
+    The battle loops UNTIL you win, by reducing all opposing Pokemon to zero health, losing by having all of your Pokemon's health go down to zero, or running away.
+
+For navigating the grid:
+    The game starts with you selecting a starter Pokemon, then show a grid on the console to the player and give them the options to go left/right/up/down (maybe by pressing A/D/W/D) if there is a nearby grid square they can hop to.
+
+    While the grid doesn't have to be overly complicated, you can do something like write in a zero for an inaccessible spot on the grid, a 1 for an accessible spot, a 2 for an item, a 3 for a Pokemon and a 4 for a CPU-trainer. The actual player can be a number like 5,6,7,8 or 9, and when the player goes to a square, the player is represented by this player number.
+
+    On a grid square, there can be a Pokemon, or an item, or a trainer and the player should have the option to interact with any of these when they are on a square.
+
+    Once the interaction is over, return to the grid and continue the game until either it's game over or the player owns 4 Pokemon.
+
+
+Additional ideas to try:
+
+    Creating an item class,
+    Creating a move class,
+    Using the termcolor library to give information via color to the player (like a water move nature is blue or a grassy area on the grid is green),
+    Creating Pokeballs and incorporating a capture function,
+    Making a friend in game (maybe player_CPU-trainer marriage if you're feeling braver than Nintendo)
+
+    And many other things.
+
+
+Grading criteria:
+
+Classes: there are 4 required classes each worth 2 points
+Functions: there are 2 required functions, game start where you start going through the grid and a battle function where you enter a battle. Each is worth 5 points.
+Submission: submit a link to your Github repo and a 1 minute video of you moving through your game. This is worth two points, but you don't get credit for this assignment if there is no video.
+
+Total 20 points
+
+If you try out additional ideas, this assignment can have 5 extra credit points (worth 25% of one homework grade, which is several a point or two of your GPA), depending how far you take it.
+
+Writeup what additional ideas you implemented.
+
+Also let me know if this is the kind of assignment you want to try once you complete it, either on discord or on the submission for the assignment.
