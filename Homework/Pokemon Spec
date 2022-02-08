@@ -13,16 +13,16 @@ Minimum criteria for this assignment:
 You need classes for players, CPU-trainers, Pokemon and grid squares (it might be a good idea to create a grid class as well)
 
 For the player:
-    You need attributes for the Pokemon the player owns, the amount of money in the player's possession, the player's bag, the player's name, gender and nature (kind, mean, funny etc)
+    You need attributes/methods for the Pokemon the player owns, the amount of money in the player's possession, the player's bag, the player's name, gender and nature (kind, mean, funny etc)
 
 For the Pokemon:
-    You need attributes for the name, health points, gender, nature and moves the Pokemon can use. Please note that moves might be better made as a class than a dict of move: attack power.
+    You need attributes/methods for the name, health points, gender, nature and moves the Pokemon can use. Please note that moves might be better made as a class than a dict of move: attack power.
 
 For the CPU-trainers:
-    You need attributes for their name, Pokemon they own, the amount of money they award the player upon losing, the Pokemon they gift to the player if any, and a fun fact about them ("Jessica the rich girl fantasizes about ruling her town with an iron fist" for example [I wouldn't want to live in her town lol!])
+    You need attributes/methods for their name, Pokemon they own, the amount of money they award the player upon losing, the Pokemon they gift to the player if any, and a fun fact about them ("Jessica the rich girl fantasizes about ruling her town with an iron fist" for example [I wouldn't want to live in her town lol!])
 
 For the grid tiles:
-    The grid tile you land on should have attributes like the terrain you're on and whatever is on the terrain (if there is something on it, like a CPU-trainer or Pokemon or Pokeball).
+    The grid tile you land on should have attributes/methods like the terrain you're on and whatever is on the terrain (if there is something on it, like a CPU-trainer or Pokemon or Pokeball).
 
 For the battle sequence:
     The battle starts, both Pokemon are called out and you are presented with a list of options:
