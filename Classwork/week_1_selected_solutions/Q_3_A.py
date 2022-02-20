@@ -15,9 +15,11 @@ A: On the boardwalk
     ^^^Given a pace you want to achieve, how many days of running on the boardwalk will it take you to achieve that pace?^^^
 
 @author: Ariel
+
+Note: this is not the best way to acheive this solution. Try to modularize the code on your own or use different data structures.
 """
 
-run_params = [25, 10, 2, 7, 1]
+
 
 def boardwalk_run(d_pace : float, run_params : list) -> int:
     """
@@ -54,21 +56,35 @@ def boardwalk_run(d_pace : float, run_params : list) -> int:
     
     current_pace, miles_for_pace_change, pace_change, limit, hours_per_day = run_params
     
-    if d_pace < limit:
-        print('cannot physically return this pace')
+    if d_pace < limit: #if we don't trigger this if, then it is trivial to assume that the program will end before reaching the limit and the while loop below does not need an exist trigger for limit checking. 
+        print('You cannot physically return this pace')
         return None
     
     
     miles_traveled = 0
     current_day = 1
+    current_pace_change = miles_for_pace_change
     
     while current_pace > d_pace:
         
         miles_traveled += hours_per_day*60 / current_pace
+        
+        if miles_traveled > current_pace_change:
+            current_pace -= pace_change
+            current_pace_change += miles_for_pace_change
+        
+        current_day += 1
+        
+        
+    print(f"The current pace is 1 mile per {current_pace} minutes and the days you have run are {current_day}.\nThe miles you have traveled are {miles_traveled} and the current number of miles needs to change pace is {current_pace_change}.\n\n")
     
     
-    
-    return 'cake'
+    return current_day
     
 if __name__ == "__main__":
-    a = boardwalk_run(7, run_params)
+    
+    run_params = [25, 10, 2, 7, 1]
+    
+    a = boardwalk_run(12, run_params)
+    b = boardwalk_run(7, run_params)
+    c = boardwalk_run(6, run_params)
