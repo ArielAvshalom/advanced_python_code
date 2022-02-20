@@ -42,9 +42,15 @@ def boardwalk_run(d_pace : float, run_params : list) -> int:
     
     In this solution here are my assumptions:
         -- A pace change only occurs after you reach a pace_change milestone (like 10 miles) and the day you're currently living ends.
-        -- 
+        -- d_pace, Pace changes, starting pace and hard_limit are in the number of minutes to run one mile
+        
+        -- day_run_limit is in hours
+        
+        -- miles_to_change is an int
 
     """
+    
+    #run_params = [25, 10, 2, 7, 1]
     
     current_pace, miles_for_pace_change, pace_change, limit, hours_per_day = run_params
     
@@ -54,6 +60,11 @@ def boardwalk_run(d_pace : float, run_params : list) -> int:
     
     
     miles_traveled = 0
+    current_day = 1
+    
+    while current_pace > d_pace:
+        
+        miles_traveled += hours_per_day*60 / current_pace
     
     
     
