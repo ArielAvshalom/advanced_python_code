@@ -54,5 +54,3 @@ if __name__ == "__main__":
     print(fire_chicken.name)
     print(fire_chicken.attacks[0].name)
     
-    
-    
