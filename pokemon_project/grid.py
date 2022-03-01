@@ -147,4 +147,3 @@ def pass_through_grid(current_player_position, grid):
     return None
 
 pass_through_grid([5,5], my_grid)
-        
