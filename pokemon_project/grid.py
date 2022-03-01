@@ -4,6 +4,7 @@ Created on Mon Feb 28 18:16:45 2022
 
 @author: Ariel
 """
+from pprint import pprint
 
 #let's make a 10x10 grid.
 my_grid = []
@@ -81,11 +82,11 @@ def pass_through_grid(current_player_position, grid):
     
     grid[current_player_position[0]][current_player_position[1]] = 9
     
-    print(grid)
+    pprint(grid)
     
     while True:
         direction = input('which direction do you want to go?\nEnter n,w,e,s for the direction\n')
-        if direction == 'n':
+        if direction == 'w':
             potential_new_position = [current_player_position[0]+x[0],current_player_position[1] + y[0]]
             
             if potential_new_position[0] < 0 or potential_new_position[0] > len(grid):
@@ -111,7 +112,7 @@ def pass_through_grid(current_player_position, grid):
                 
                 current_player_position = potential_new_position
                 
-        elif direction == 'w':
+        elif direction == 'a':
             potential_new_position = [current_player_position[0]+x[2],current_player_position[1] + y[2]]
             
             if potential_new_position[1] < 0 or potential_new_position[1] > len(grid[0]):
@@ -124,7 +125,7 @@ def pass_through_grid(current_player_position, grid):
                 
                 current_player_position = potential_new_position
                 
-        elif direction == 'e':
+        elif direction == 'd':
             potential_new_position = [current_player_position[0]+x[3],current_player_position[1] + y[3]]
             
             if potential_new_position[1] < 0 or potential_new_position[1] > len(grid[0]):
@@ -141,7 +142,7 @@ def pass_through_grid(current_player_position, grid):
             print('thank you for playing!')
             break
                 
-        print(grid)
+        pprint(grid)
         
     return None
 
