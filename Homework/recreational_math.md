@@ -18,3 +18,10 @@ Here is the goal of this project, to learn about code review and how to spot err
     <li>Amicable Numbers</li>
     <li>And a bunch of other recreational math topics!</li>
 </ul>
+
+And here is the interesting part (which can be very difficult). Your goal is to add implicit errors into your code. Implicit errors are (non pythonic :wink:) errors which aren't always obvious and oftentimes end with the program running but the solution being incorrect. You'll likely need to use logic errors or errors that only show up when an edge case is requested by a user. 
+
+Then submit your code to a repository that your team will fork from my github for this assignment. Each team will write their code into a folder they make with their group number. Once your code is submitted, the team will meet and run a code review for each code submission. The goal of the code review is to catch the implicit errors and to correct any other errors found.
+
+Finally, the team will work together to generate a docstring which will explain what the code is attempting to do and a little blurb about the actual problem (from the math perspective ie who discovered it, why and what significance if any it might have). 
+
