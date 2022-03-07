@@ -40,4 +40,4 @@ The grade for this assignment is out of 20.
     <li>Note: try to have fun! This is an experiment and it would be good to know how to improve this assignment! Let me know your thoughts at the end!</li>
 </ul>
 
-Extra credit will be awarded for more ambitious math problems tackled and for creative errors that arise from the problem chosen (like finding an incorrect Colletz Conjecture solution :laugh:).
+Extra credit will be awarded for more ambitious math problems tackled and for creative errors that arise from the problem chosen (like finding an incorrect Colletz Conjecture solution :laughing:).
