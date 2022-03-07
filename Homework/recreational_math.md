@@ -4,3 +4,4 @@ This assignment has multiple parts and is a group project. You will be split int
 
 Recreational math is mathematics that is done for fun. Most of you might think that such a thing should not exist. But it does, and it could actually be quite fun.
 
+You can see a lot of examples from links on the recrational math !(wikipedia)[https://en.wikipedia.org/wiki/Recreational_mathematics]
