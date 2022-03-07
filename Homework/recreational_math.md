@@ -1,4 +1,4 @@
-CSCI 39538: Homework 2: Recreational Math Spec        Due: 3/24/22
+# CSCI 39538: Homework 2: Recreational Math Spec        Due: 3/24/22
 
 This assignment has multiple parts and is a group project. You will be split into groups on 3/7/22 and it is recommended that you come into class. This assingment is also not the standard kind of assignment you would see in a college class.
 
@@ -25,3 +25,19 @@ Then submit your code to a repository that your team will fork from my github fo
 
 Finally, the team will work together to generate a docstring which will explain what the code is attempting to do and a little blurb about the actual problem (from the math perspective ie who discovered it, why and what significance if any it might have). 
 
+# Summary:
+
+The grade for this assignment is out of 20.
+
+<ul>
+    <li> (5/20 points) Write code to attempt to solve a recreational math problem. Choose one that already has a solution</li>
+    <li>Note: while finding an algorithm online is fine, do not copy code from an online source</li>
+    <li>(5/20 points) Inject implicit errors into your code</li>
+    <li>(5/20 points) Run a code review to discover these errors. You cannot give away the errors, your teammates must discover them</li>
+    <li>(5/20 points) Write a docstring with your team outlining what the code does</li>
+    <li>Note: code review can also be used to find a more optimal solution to a problem</li>
+    <li>Note: besides submitting your code, you also need to submit a doc showing what errors you injected and how those errors aren't immediately obvious (ie obvious runtime errors don't count)</li>
+    <li>Note: try to have fun! This is an experiment and it would be good to know how to improve this assignment! Let me know your thoughts at the end!</li>
+</ul>
+
+Extra credit will be awarded for more ambitious math problems tackled and more creative errors.
