@@ -16,7 +16,7 @@ Here is the goal of this project, to learn about code review and how to spot err
     <li>Finding palindromic patterns like with the number 1089</li>
     <li>Armstrong Numbers or narcissistic numbers</li>
     <li>Amicable Numbers</li>
-    <li>And a bunch of other recreational math topics!</li>
+    <li>And a bunch of other recreational math topics (fractals for example)!</li>
 </ul>
 
 And here is the interesting part (which can be very difficult). Your goal is to add implicit errors into your code. Implicit errors are (non pythonic :wink:) errors which aren't always obvious and oftentimes end with the program running but the solution being incorrect. You'll likely need to use logic errors or errors that only show up when an edge case is requested by a user. 
