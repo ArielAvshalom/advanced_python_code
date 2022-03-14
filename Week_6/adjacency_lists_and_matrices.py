@@ -2,12 +2,6 @@
 """
 Created on Mon Mar 14 18:12:46 2022
 
-@author: Ariel
-"""
-
-#some code to get a adjacency list
-
-"""
 node : edgelist of the node
 
 1 : [2,3]
@@ -21,8 +15,20 @@ What input do you envision?
 (1,2), (1,3), (2,1), (2,4), (3,1), (3,4), (4,2), (4,3), (4,5), (5,4) ...
 [(1,2), (1,3), (2,1), (2,4)]
 We might also get that there are 5 nodes for example
+
+explaining args and kwargs:
+    
+     for arg in args:
+            print(arg)
+        print('done with args')
+        for key_word_arg in kwargs:
+            print(kwargs[key_word_arg])
+    
+
+@author: Ariel
 """
-#import networkx
+
+
 
 def make_adjacency_list(*args):
     """
@@ -63,15 +69,17 @@ def make_adjacency_list(*args):
         
 
 #make_adjacency_list((1,2), (1,3), (2,1), (2,4), 1, 2, 3, 'abc')
-"""
- for arg in args:
-        print(arg)
-    print('done with args')
-    for key_word_arg in kwargs:
-        print(kwargs[key_word_arg])
-"""
+
+
+#implicit error example
+test_case = make_adjacency_list([(1,2), (1,3), (2,1), (2,4), (3,1), (3,4), (4,2), (4,3), (4,5), (5,4)])
 
 test_case = make_adjacency_list([(1,2), (1,3), (2,1), (2,4), (3,1), (3,4), (4,2), (4,3), (4,5), (5,4)])
 
+def count_nodes(*args):
+    
+    set_of_nodes = set()
+    
+    for node in args
 
 
