@@ -17,7 +17,12 @@ So your functions should be able to check for and do all of these. You can eithe
 
 Once you've created these functions, you're going to do the following:
 
+Bonus point opportunity, create an additional matrix function using a numpy array. Please note that a numpy array is not mutable, so it isn't recommended that you use it in the class functions below.
+
 Part 2:
 
+Create the following classes: a class for adjacency lists and a class for adjacency matrices
+
+Each class should be initialized as an empty adjacency list or matrix. I recommend initializing the matrix as a nXn matrix based on the number of nodes in the graph. It is important to note that if a new node is added, the matrix will have to change to an n+1Xn+1 matrix.
 
 """
