@@ -94,10 +94,21 @@ def make_adjacency_matrix(*args):
     
     adjacency_matrix = []
     
-    for value in range(count):
-        adjacency_matrix.append([])
+    list_to_append = []
     
-    print(count)
+    for value in range(count+1):
+        list_to_append.append(0)
+    
+    for value in range(count+1):
+        adjacency_matrix.append(list_to_append[:])
+    
+    
+    for edge_value in args:
+        adjacency_matrix[edge_value[0]][edge_value[1]] = 1
+    
+    pprint(adjacency_matrix)
+    
+    return adjacency_matrix
     
     
 
@@ -114,5 +125,15 @@ if __name__ == "__main__":
     
     make_matrix_case = make_adjacency_matrix((1,2), (1,3), (2,1), (2,4), (3,1), (3,4), (4,2), (4,3), (4,5), (5,4), (5,6))
     
+    
+#Here is your assignment
 
+#remember those cases from earlier? Now you have to do that
 
+#I want you to write code for either other use case
+#give me code for an adjacency list and matrix for both of those cases specifically functions
+# (1,4) 4->1 and also the case of 1->4 and 4->1
+
+#Write up those functions into a class for lists and a class for matrices
+
+#besides creating a list and matrix, they should also do things like give me an edgelist, and give me a count of all nodes 
