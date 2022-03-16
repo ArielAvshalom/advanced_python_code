@@ -22,7 +22,7 @@ def collatz(num, array):
         collatz(num, array)
     elif num%2 == 0:
         print(colored(num, 'white', 'on_blue'))
-        num = num//2
+        num = num/2
         collatz(num, array)
         
     
