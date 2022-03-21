@@ -27,6 +27,29 @@ for each node in graph
 """
 
 def dfs(graph, start, visited = None):
+    """
+    
+    What the heck is it doing....
+    It's running dfs and here is how
+    blah blah data structure etc
+    blah blah...
+    
+
+    Parameters
+    ----------
+    graph : TYPE
+        DESCRIPTION.
+    start : TYPE
+        DESCRIPTION.
+    visited : TYPE, optional
+        DESCRIPTION. The default is None.
+
+    Returns
+    -------
+    visited : TYPE
+        DESCRIPTION.
+
+    """
     if visited is None:
         visited = set()
         #alternatively we can use a dict as well.
