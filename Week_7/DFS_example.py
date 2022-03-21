@@ -35,10 +35,9 @@ def dfs(graph, start, visited = None):
     print(start)
     
     
-    for node in graph:
-        if node not in visited:
-            for nextnode in graph[start] - visited:
-                dfs(graph, nextnode, visited)
+
+    for nextnode in graph[start] - visited:
+        dfs(graph, nextnode, visited)
         
     return visited
 
