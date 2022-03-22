@@ -9,3 +9,4 @@
 |4|Pokemon 1 Graphs 1|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/EZD99qQhWXpHr66rmWw7E8EBlCwMZppOgYKyZojhBC1F2g?e=qWz57b)||||
 |5|Recreational Math |[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/ESYgynR9DLBDsFfY_dFawmoB92v4sNrLBN9CI9MbyiFtAw?e=qTY4t5)|||[Recreational Math Group Project](https://github.com/ArielAvshalom/advanced_python_code/blob/main/Homework/recreational_math.md)|
 |6|graphs 2|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/ETtmTg2PRbdMnioSluOhZiMBWBhtFOF4qXhho-4kBl2heQ?e=Sv3Gab)||[graph data structures](https://github.com/ArielAvshalom/advanced_python_code/blob/main/Classwork/classwork_week_6.py)||
+|7|graphs 3 and group work|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/EeXAkMf950pPuzeolLJ5PcMBzHADwMa4NZVdOMl8uTSv8Q?e=VZpnir)||||
