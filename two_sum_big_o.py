@@ -78,6 +78,18 @@ def dict_two_sum(list1, list2, target):
 
 #list generation
 
+def random_Recursion(n):
+    if n == 0:
+        print('yass')
+        return 0
+    
+    if n == 1:
+        print('yass')
+        return 1
+    else:
+        print(n)
+        random_Recursion(n-1)
+
 lista = [x for x in range(1972)]
 dicta = {x : 17-x for x in range(1972)}
 
@@ -93,3 +105,5 @@ if __name__ == "__main__":
     print('----------')
     print(sys.getsizeof(lista))
     print(sys.getsizeof(dicta))
+    
+    random_Recursion(2500)
