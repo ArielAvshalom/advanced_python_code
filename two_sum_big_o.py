@@ -106,4 +106,4 @@ if __name__ == "__main__":
     print(sys.getsizeof(lista))
     print(sys.getsizeof(dicta))
     
-    random_Recursion(2500)
+    random_Recursion(300)
