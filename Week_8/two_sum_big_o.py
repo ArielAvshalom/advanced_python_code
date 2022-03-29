@@ -45,6 +45,9 @@ def bruteforce_two_sum(list1, list2, target):
     print('NOOOOOOOO!')
     return False
 
+#The cost of this could be O(2n^2 + 4)
+
+
 
 
 def better_two_sum(list1, list2, target):
@@ -69,8 +72,23 @@ def dict_two_sum(list1, list2, target):
         
     return list2_dict
 
+#creating a dict
+# O(3n + 4n + 3) -> O(50n + 3)
+
 
 #list generation
+
+def random_Recursion(n):
+    if n == 0:
+        print('yass')
+        return 0
+    
+    if n == 1:
+        print('yass')
+        return 1
+    else:
+        print(n)
+        random_Recursion(n-1)
 
 lista = [x for x in range(1972)]
 dicta = {x : 17-x for x in range(1972)}
@@ -87,3 +105,5 @@ if __name__ == "__main__":
     print('----------')
     print(sys.getsizeof(lista))
     print(sys.getsizeof(dicta))
+    
+    random_Recursion(2500)
