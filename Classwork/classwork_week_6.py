@@ -45,7 +45,7 @@ The classes should also have:
     2.  A function which returns the node with the most edges in the cases of (these should work for any type graph):
             A:  edges leaving the node
             B:  edges pointing toward the node
-            C:  edges with the most nodes pointing both towards and away from the node
+            C:  edges with the most nodes pointing both towards and away from the node. This means to count all of the edges entering and exiting the node. This would be easier to see with a matrix where you add up all of the vertical and horizontal values for a particular node. 
     
     3.  A set of functions that given a starting node returns 
             A:  a BFS search of the graph
