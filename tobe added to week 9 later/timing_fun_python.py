@@ -168,13 +168,15 @@ def main3():
     
     t.stop()
 
-def main3_5(logger_2_insert = 'blah'):
+def main3_5(logger_2_insert = logging.warning):
     
     t = Timer3(logger = logger_2_insert)
     t.start()
     
     time.sleep(1)
     
+    tot_time = t.stop()
+    print(tot_time)
     
     # if logger_2_insert is None:
     #     total_time_inside_main = t.stop()
@@ -183,6 +185,22 @@ def main3_5(logger_2_insert = 'blah'):
     # else:
     #     t.stop()
     #     print('logging is on')
+    
+def main3_5_5(tutorials_requested):
+    tutorial_dict = dict()
+    
+    print(f"you are downloading {tutorials_requested} tutorials")
+    t = Timer3(text= "Time Cost: {:0.3f} seconds")
+    t.start()
+    
+    for tutorial_num in range(tutorials_requested):
+        tutorial = feed.get_article(tutorial_num)
+        tutorial_dict[tutorial_num] = tutorial
+        #we could print the tutorial but we won't.
+    t.stop()
+    
+    return tutorial_dict
+    
 
 
 
@@ -198,6 +216,7 @@ if __name__ == "__main__":
     main3()
     main3_5()
     main3_5(logger_2_insert = None)
+    tutorials = main3_5_5(10)
     
     
     # t = Timer()
