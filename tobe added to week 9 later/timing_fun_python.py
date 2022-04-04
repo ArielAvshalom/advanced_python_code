@@ -20,12 +20,25 @@ Threeeeeeeeeeeeeeeeeeeee ways to see the cost of your code and show the differen
 #pip install realpython-reader
 
 from reader import feed
+import time
+
+
+time.perf_counter() #this gives us the current time from a selected time in the past. That time in the past is constant.
+
+
+
+
+
 
 
 def main(article_offset):
-    get_some_Awesome_material = feed.get_article(article_offset)
+    start_time = time.perf_counter()
+    get_material = feed.get_article(article_offset)
+    end_time = time.perf_counter()
     
-    print(get_some_Awesome_material)
+    print(f"Did this thingie in {end_time-start_time:0.4f} seconds.")
+    
+    #print(f"{start_time=}")#does not work on this version of python.
 
 if __name__ == "__main__":
     main(0)
