@@ -24,6 +24,7 @@ Threeeeeeeeeeeeeeeeeeeee ways to see the cost of your code and show the differen
 
 from reader import feed
 import time
+import logging
 
 
 time.perf_counter() #this gives us the current time from a selected time in the past. That time in the past is constant.
@@ -87,6 +88,57 @@ class Timer2:
 
 
 
+class Timer3:
+    def __init__(
+            self,
+            text = "Elapsed Time: {:0.4f} seconds",
+            logger = print
+            ):
+        self._start_time = None
+        self.text = text
+        self.logger = logger
+        
+        
+    def start(self):
+        if self._start_time is not None:
+            raise TimerError(f"Our timer is running right now. Stopr it first. Use .stop() to stop it.")
+            
+        self._start_time = time.perf_counter()
+            
+    def stop(self):
+        if self._start_time is None:
+            raise TimerError(f"You can't stop something you never started. Use .start() to start the timer!")
+            
+        total_time = time.perf_counter() - self._start_time
+        self._start_time = None
+        
+        if self.logger:
+            self.logger(self.text.format(total_time))
+        
+        #print(f"The elapsed time is : {total_time:0.4f} seconds")
+        
+        return total_time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def main(article_offset):
     start_time = time.perf_counter()
     get_material = feed.get_article(article_offset)
@@ -107,6 +159,35 @@ def main2(text_2_insert):
     t.start()
     get_material = feed.get_article(0)
     t.stop()
+    
+def main3():
+    t = Timer3(logger = logging.warning)
+    t.start()
+    
+    time.sleep(1)
+    
+    t.stop()
+
+def main3_5(logger_2_insert = 'blah'):
+    
+    t = Timer3(logger = logger_2_insert)
+    t.start()
+    
+    time.sleep(1)
+    
+    
+    # if logger_2_insert is None:
+    #     total_time_inside_main = t.stop()
+    #     print('logging is turned off')
+    #     print(total_time_inside_main)
+    # else:
+    #     t.stop()
+    #     print('logging is on')
+
+
+
+
+
 
 
 if __name__ == "__main__":
@@ -114,6 +195,9 @@ if __name__ == "__main__":
     main1_5()
     
     main2('you waited {:.7f} seconds')
+    main3()
+    main3_5()
+    main3_5(logger_2_insert = None)
     
     
     # t = Timer()
