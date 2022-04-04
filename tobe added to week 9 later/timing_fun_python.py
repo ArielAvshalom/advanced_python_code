@@ -52,6 +52,41 @@ class Timer:
         self._start_time = None
         print(f"The elapsed time is : {total_time:0.4f} seconds")
 
+
+
+
+
+
+
+
+
+
+
+
+class Timer2:
+    def __init__(self, text = "Elapsed time: {:0.6f} seconds"):
+        self._start_time = None
+        self.text = text
+        
+        
+    def start(self):
+        if self._start_time is not None:
+            raise TimerError(f"Our timer is running right now. Stopr it first. Use .stop() to stop it.")
+            
+        self._start_time = time.perf_counter()
+            
+    def stop(self):
+        if self._start_time is None:
+            raise TimerError(f"You can't stop something you never started. Use .start() to start the timer!")
+            
+        total_time = time.perf_counter() - self._start_time
+        self._start_time = None
+        print(self.text.format(total_time))
+
+
+
+
+
 def main(article_offset):
     start_time = time.perf_counter()
     get_material = feed.get_article(article_offset)
@@ -60,9 +95,26 @@ def main(article_offset):
     print(f"Did this thingie in {end_time-start_time:0.4f} seconds.")
     
     #print(f"{start_time=}")#does not work on this version of python.
+    
+def main1_5():
+    t = Timer()
+    t.start()
+    get_material = feed.get_article(0)
+    t.stop()
+
+def main2(text_2_insert):
+    t = Timer2(text = text_2_insert)
+    t.start()
+    get_material = feed.get_article(0)
+    t.stop()
+
 
 if __name__ == "__main__":
     main(0)
+    main1_5()
+    
+    main2('you waited {:.7f} seconds')
+    
     
     # t = Timer()
     # t.start()
