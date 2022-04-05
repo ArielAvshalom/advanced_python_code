@@ -120,7 +120,47 @@ class Timer3:
         return total_time
 
 
-
+class Timer4:
+    timers = {}
+    
+    def __init__(
+            self,
+            name = None,
+            text = "Elapsed time : {:0.4f} seconds",
+            logger = print,
+            ):
+        
+        self._start_time = None
+        self.name = name
+        self.text = text
+        self.logger = logger
+        
+        if name:
+            self.timers.setdefault(name, 0)
+        
+    def start(self):
+        if self._start_time is not None:
+            raise TimerError(f"Our timer is running right now. Stop it first. Use .stop() to stop it.")
+            
+        self._start_time = time.perf_counter()
+        
+    def stop(self):
+        
+        if self._start_time is None:
+            raise TimerError(f"You can't stop something you never started. Use .start() to start the timer!")
+            
+        total_time = time.perf_counter() - self._start_time
+        self._start_time = None
+        
+        if self.logger:
+            self.logger(self.text.format(total_time))
+        if self.name:
+            self.timers[self.name] += total_time
+            
+        return total_time
+            
+    
+    
 
 
 
@@ -197,9 +237,26 @@ def main3_5_5(tutorials_requested):
         tutorial = feed.get_article(tutorial_num)
         tutorial_dict[tutorial_num] = tutorial
         #we could print the tutorial but we won't.
+        #consider the issue where we are also printing the tutorial onto the screen. That could take time and we might not want to record that.
+        
     t.stop()
     
     return tutorial_dict
+
+
+def main4():
+    t = Timer4('multiple')
+    t.start()
+    
+    time.sleep(1)
+    
+    t.stop()
+    
+    t.start()
+    time.sleep(2)
+    t.stop()
+    
+    print(Timer4.timers)
     
 
 
@@ -212,11 +269,13 @@ if __name__ == "__main__":
     main(0)
     main1_5()
     
-    main2('you waited {:.7f} seconds')
-    main3()
-    main3_5()
-    main3_5(logger_2_insert = None)
-    tutorials = main3_5_5(10)
+    # main2('you waited {:.7f} seconds')
+    # main3()
+    # main3_5()
+    # main3_5(logger_2_insert = None)
+    # tutorials = main3_5_5(10)
+    
+    main4()
     
     
     # t = Timer()
