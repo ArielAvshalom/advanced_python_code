@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 29 16:39:44 2022
+
+@author: arielavshalom
+"""
+
+class node:
+    def __init__(self, node_id, edge_set = None):
+        self.id = node_id
+        self.edges = edge_set
+
+my_node = node('0', )
+
+graph = {
+    '0' : set(['1','9']),
+    '1' : set(['0','8']),
+    '2' : set(['3']),
+    '3' : set(['2','4','6','7']),
+    '4' : set(['3']),
+    '5' : set(['6','7']),
+    '6' : set(['3', '5']),
+    '7' : set(['3','5','8','10','11']),
+    '8' : set(['1','7','9']),
+    '9' : set(['0','8']),
+    '10' : set(['7','11']),
+    '11' : set(['7', '10']),
+    '12' : set(['13']),
+    '13' : set(['12']),
+    '14' : set()
+    }
