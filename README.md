@@ -11,4 +11,5 @@
 |6|graphs 2|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/ETtmTg2PRbdMnioSluOhZiMBWBhtFOF4qXhho-4kBl2heQ?e=Sv3Gab)||[graph data structures](https://github.com/ArielAvshalom/advanced_python_code/blob/main/Classwork/classwork_week_6.py)||
 |7|graphs 3 and group work|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/EeXAkMf950pPuzeolLJ5PcMBzHADwMa4NZVdOMl8uTSv8Q?e=VZpnir)||||
 |8|Big O and more Github|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/ER4U-dmOtM5BtH_bndr4FGwBe92pYc-PTvfWWVzMWOOtPA?e=g77ejc)||||
-|9|Timers and more Python|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/EeQRNTHSgoRNqI3uMaEsvjABGQXawgM4QzIpQltSGPxmWQ?e=8mLdOY)|||
+|9|Timers and more Python|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/EeQRNTHSgoRNqI3uMaEsvjABGQXawgM4QzIpQltSGPxmWQ?e=8mLdOY)||||
+|10|PyQt|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/EYWVq-gUtL9OhAiGoS6UPBMBfhLuY_ADblrC6H1_bCuzbg?e=80Ek24)|[Code](https://github.com/ArielAvshalom/pyQTCalc)|||
