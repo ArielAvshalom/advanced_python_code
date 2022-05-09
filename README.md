@@ -14,3 +14,4 @@
 |9|Timers and more Python|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/EeQRNTHSgoRNqI3uMaEsvjABGQXawgM4QzIpQltSGPxmWQ?e=8mLdOY)||||
 |10|PyQt|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/EYWVq-gUtL9OhAiGoS6UPBMBfhLuY_ADblrC6H1_bCuzbg?e=80Ek24)|[Code](https://github.com/ArielAvshalom/pyQTCalc)|||
 |11|PyQt 2|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/EQGuH-2FzEFKo9KSN-sk8-sBlQEteIsTteWJqL-1N4eOrw?e=4ueF3n)|&#8593;|||
+|12|Web Scraping 1|[:tv:](https://cuny907-my.sharepoint.com/:v:/g/personal/ariel_avshalumov37_login_cuny_edu/EVgaYy0Txj1AgPt40HsqBlQBCoUPVu46CkUr-KmlsoARZQ?e=eCdKgd)||||
