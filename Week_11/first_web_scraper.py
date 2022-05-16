@@ -47,6 +47,3 @@ title_without_tags = re.sub("<.*?>", "", title)
 
 
 
-
-
-
