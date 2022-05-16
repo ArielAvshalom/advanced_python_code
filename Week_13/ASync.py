@@ -124,6 +124,20 @@ if __name__ == "__main__":
     print('the file', "ran in", elapsed_time, 'seconds.')
 
 
+#this is legal
+
+async def nooooooob(): pass
 
 
+# @syncio.coroutine
+# def pycoro(): #only 3.4 and below, not legal anymore ie after 3.10
+#     """old syntax with generators"""
+#     yield from () #this no longer is a thing
+    
+    
+    
+    
+# #this is native below
 
+# async def pycorororororooror():
+#     await ()
