@@ -78,26 +78,50 @@ sys.getrefcount(a)
 
 import asyncio
 
-async def count():
+async def count(some_verifier):
     print('one')
+    # if some_verifier == 'two':
+    #     await asyncio.sleep(10)
+    # else:
+    #     await asyncio.sleep(2)
     await asyncio.sleep(1)
     print('two')
     
+    # await asyncio.sleep(1)
+    # print(some_verifier)
+    
 async def main():
-    await asyncio.gather(count(), count(), count())
+    await asyncio.gather(count('one'), count('two'), count('three'))
     
 if __name__ == "__main__":
     import time
     s = time.perf_counter()
     
     asyncio.run(main())
-    
     elapsed_time = time.perf_counter()-s
-    #print('the file', __file__, "ran in", elapsed_time, 'seconds.')
+    print('the file', __file__, "ran in", elapsed_time, 'seconds.')
 
 #IPython is already running asyncio.
 
+import time
+def synchronous_count():
+    print(1)
+    time.sleep(1)
+    print('two')
+    
+def main():
+    for _ in range(3):
+        synchronous_count()
 
+
+if __name__ == "__main__":
+    
+    s = time.perf_counter()
+    
+    main()
+    
+    elapsed_time = time.perf_counter()-s
+    print('the file', "ran in", elapsed_time, 'seconds.')
 
 
 
